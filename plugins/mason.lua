@@ -22,6 +22,7 @@ return {
         "ruby_ls",
         "sqlls",
         "vuels",
+        "volar",
       })
     end,
   },
