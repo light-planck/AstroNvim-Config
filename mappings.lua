@@ -32,4 +32,5 @@ return {
     ["J"] = { ":move '>+1<CR>gv-gv", desc = "Move lines of code up" },
     ["K"] = { ":move '<-2<CR>gv-gv", desc = "Move lines of code down" },
   },
+  vim.api.nvim_set_keymap("n", "<leader>n", ":ASToggle<CR>", {}),
 }
