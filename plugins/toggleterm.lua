@@ -9,6 +9,5 @@ return {
       border = "curved",
       highlights = { border = "Normal", background = "Normal" },
     },
-    direction = 'float',
   },
 }
