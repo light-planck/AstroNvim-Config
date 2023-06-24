@@ -7,7 +7,6 @@
       "using namespace std;",
       "using ll = long long;",
       "",
-      "",
       "int main() {",
       "  $0",
       "  return 0;",
@@ -17,100 +16,72 @@
   },
   "cout << n": {
     "prefix": "cout",
-    "body": [
-      "cout << $0 << '\\n';"
-    ],
+    "body": ["cout << $0 << '\\n';"],
     "description": "cout << "
   },
   "cout << Yes": {
     "prefix": "yes",
-    "body": [
-      "cout << \"Yes\" << '\\n';"
-    ],
+    "body": ["cout << \"Yes\" << '\\n';"],
     "description": "print yes"
   },
   "cout << No": {
     "prefix": "no",
-    "body": [
-      "cout << \"No\" << '\\n';"
-    ],
+    "body": ["cout << \"No\" << '\\n';"],
     "description": "print no"
   },
   "printf": {
     "prefix": "printf",
-    "body": [
-      "printf(\"%.10f\\n\", $0);"
-    ],
+    "body": ["printf(\"%.10f\\n\", $0);"],
     "description": ""
   },
   "vs": {
     "prefix": "vs",
-    "body": [
-      "vector<string>"
-    ],
+    "body": ["vector<string>"],
     "description": ""
   },
   "vector": {
     "prefix": "vec",
-    "body": [
-      "vector<$0>"
-    ],
+    "body": ["vector<$0>"],
     "description": ""
   },
   "vll": {
     "prefix": "vll",
-    "body": [
-      "vector<ll>$0"
-    ],
+    "body": ["vector<ll>$0"],
     "description": ""
   },
   "vvll": {
     "prefix": "vv",
-    "body": [
-      "vector $1($2, vector<ll>($0));"
-    ],
+    "body": ["vector $1($2, vector<ll>($0));"],
     "description": ""
   },
   "vvvll": {
     "prefix": "vvv",
-    "body": [
-      "vector $1($2, vector<vector<ll>>($3, vector<ll>($0)));"
-    ],
+    "body": ["vector $1($2, vector<vector<ll>>($3, vector<ll>($0)));"],
     "description": ""
   },
   "vmint": {
     "prefix": "vmint",
-    "body": [
-      "vector<mint>"
-    ],
+    "body": ["vector<mint>"],
     "description": ""
   },
   "vvmint": {
     "prefix": "vvmint",
-    "body": [
-      "vector<vector<mint>> "
-    ],
+    "body": ["vector<vector<mint>> "],
     "description": ""
   },
   "vector pair": {
     "prefix": "vp",
-    "body": [
-      "vector<P>"
-    ],
+    "body": ["vector<P>"],
     "description": "vector pair"
   },
   "mp": {
     "prefix": "mp",
-    "body": [
-      "map<$1, $1>$0"
-    ],
+    "body": ["map<$1, $1>$0"],
     "description": ""
   },
   "pq": {
     "prefix": "pq",
-    "body": [
-      "priority_queue<$1, vector<$1>, greater<$1>>$0"
-    ],
+    "body": ["priority_queue<$1, vector<$1>, greater<$1>>$0"],
     "description": ""
   },
   "nextp": {
@@ -124,30 +95,22 @@
   },
   "emplace_back": {
     "prefix": "emp",
-    "body": [
-      "emplace_back($0);"
-    ],
+    "body": ["emplace_back($0);"],
     "description": "emplace_back"
   },
   "set": {
     "prefix": "st",
-    "body": [
-      "set<$1>$0"
-    ],
+    "body": ["set<$1>$0"],
     "description": "set"
   },
   "inf": {
     "prefix": "inf",
-    "body": [
-      "constexpr ll inf = 1ll << 60;"
-    ],
+    "body": ["constexpr ll inf = 1ll << 60;"],
     "description": ""
   },
   "mod": {
     "prefix": "mod",
-    "body": [
-      "constexpr ll mod = 998244353;"
-    ],
+    "body": ["constexpr ll mod = 998244353;"],
     "description": ""
   },
   "dxdy": {
@@ -160,18 +123,12 @@
   },
   "dfs": {
     "prefix": "dfs",
-    "body": [
-      "auto dfs = [&](auto self, ) -> void {",
-      "  ",
-      "};"
-    ],
+    "body": ["auto dfs = [&](auto self, ) -> void {", "  ", "};"],
     "description": "dfs"
   },
   "edge": {
     "prefix": "edge",
-    "body": [
-      "vector edge(n, vector<ll>());"
-    ],
+    "body": ["vector edge(n, vector<ll>());"],
     "description": "edge"
   },
   "binary_search": {
@@ -193,18 +150,12 @@
   },
   "round": {
     "prefix": "round",
-    "body": [
-      "auto round = [](ll a, ll b) { return (a + b - 1) / b; };"
-    ],
+    "body": ["auto round = [](ll a, ll b) { return (a + b - 1) / b; };"],
     "description": "round"
   },
   "lambda expression": {
     "prefix": "lambda",
-    "body": [
-      "auto $1 = [&]($2) {",
-      "  $0",
-      "};"
-    ],
+    "body": ["auto $1 = [&]($2) {", "  $0", "};"],
     "description": "lambda expression"
   },
   "pow": {
@@ -216,16 +167,12 @@
   },
   "": {
     "prefix": "slice",
-    "body": [
-      "auto Slice(string& s, ll l, ll r) { return s.substr(l, r-l); }"
-    ],
+    "body": ["auto Slice(string& s, ll l, ll r) { return s.substr(l, r-l); }"],
     "description": ""
   },
   "rep cin": {
     "prefix": "rep",
-    "body": [
-      "rep(i, n) cin >> $0[i];"
-    ],
+    "body": ["rep(i, n) cin >> $0[i];"],
     "description": ""
   },
   "print": {
@@ -248,31 +195,22 @@
   },
   "choose min": {
     "prefix": "min",
-    "body": [
-      "auto chmin = [](auto& a, auto b) { if (a > b) a = b; };"
-    ],
+    "body": ["auto chmin = [](auto& a, auto b) { if (a > b) a = b; };"],
     "description": "choose min"
   },
   "choose max": {
     "prefix": "max",
-    "body": [
-      "auto chmax = [](auto& a, auto b) { if (a < b) a = b; };"
-    ],
+    "body": ["auto chmax = [](auto& a, auto b) { if (a < b) a = b; };"],
     "description": "choose max"
   },
   "alias pair": {
     "prefix": "pair",
-    "body": [
-      "pair<$1, $2>$0"
-    ],
+    "body": ["pair<$1, $2>$0"],
     "description": "alias pair"
   },
   "atcoder library": {
     "prefix": "acl",
-    "body": [
-      "#include <atcoder/all>",
-      "using namespace atcoder;"
-    ],
+    "body": ["#include <atcoder/all>", "using namespace atcoder;"],
     "description": "atcoder library"
   },
   "modint": {
@@ -285,24 +223,17 @@
   },
   "fast": {
     "prefix": "fast",
-    "body": [
-      "cin.tie(nullptr);",
-      "ios::sync_with_stdio(false);"
-    ],
+    "body": ["cin.tie(nullptr);", "ios::sync_with_stdio(false);"],
     "description": "fast"
   },
   "range": {
     "prefix": "rng",
-    "body": [
-      "$1.begin(), $1.end()$0"
-    ],
+    "body": ["$1.begin(), $1.end()$0"],
     "description": "range"
   },
   "reverse range": {
     "prefix": "rrng",
-    "body": [
-      "$1.rbegin(), $1.rend()$0"
-    ],
+    "body": ["$1.rbegin(), $1.rend()$0"],
     "description": "reverse range"
   },
   "delta i, delta j": {
@@ -314,44 +245,32 @@
   },
   "alias long double": {
     "prefix": "double",
-    "body": [
-      "using ldouble = long double;"
-    ],
+    "body": ["using ldouble = long double;"],
     "description": "alias long double"
   },
   "alias point structure with complex": {
     "prefix": "point",
-    "body": [
-      "using Point = complex<ldouble>;"
-    ],
+    "body": ["using Point = complex<ldouble>;"],
     "description": "alias point structure with complex"
   },
   "pi": {
     "prefix": "pi",
-    "body": [
-      "const ldouble PI = acos(-1);"
-    ],
+    "body": ["const ldouble PI = acos(-1);"],
     "description": "pi"
   },
   "accumulate": {
     "prefix": "accumulate",
-    "body": [
-      "accumulate($1.begin(), $1.end(), 0ll)$0"
-    ],
+    "body": ["accumulate($1.begin(), $1.end(), 0ll)$0"],
     "description": "accumulate"
   },
   "long long": {
     "prefix": "ll",
-    "body": [
-      "long long"
-    ],
+    "body": ["long long"],
     "description": ""
   },
   "for": {
     "prefix": "for",
-    "body": [
-      "for (ll $1 = 0; $1 < $2; ++$1)$0"
-    ],
+    "body": ["for (ll $1 = 0; $1 < $2; ++$1)$0"],
     "description": ""
   }
 }
